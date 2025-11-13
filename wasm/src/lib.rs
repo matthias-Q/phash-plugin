@@ -8,10 +8,10 @@ pub fn process_image(bytes: &[u8]) -> String {
         if let Ok(hash) = phash(&image, 8, 12) {
             hash
         } else {
-            "".to_string()
+            "error: failed to compute hash".to_string()
         }
     } else {
-        "".to_string()
+        "error: failed to load image".to_string()
     }
 }
 
