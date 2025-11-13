@@ -1,0 +1,14 @@
+[package]
+name = "wasm"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Matthias Queitsch"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+image = {version="0.25.8", default-features = false, features = ["jpeg", "png", "gif", "bmp"] }
+rustdct = {version="0.7.1"}
+wasm-bindgen = "0.2.105"
