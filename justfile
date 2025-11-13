@@ -3,6 +3,7 @@ build:
     @echo "Building Rust WASM..."
     cd wasm && wasm-pack build --target web --out-dir pkg
 
+# Build the Rust WASM module for local testing
 local:
     @echo "Building Rust WASM..."
     cd wasm && wasm-pack build --target nodejs --out-dir pkg_node
